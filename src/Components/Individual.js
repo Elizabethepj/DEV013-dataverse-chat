@@ -85,9 +85,9 @@ export const individual = (element) => {
           genMess.appendChild(nameSystem);
           genMess.appendChild(systemMessage);
         })
-        /* .catch(error => {
-          console.error("error al comunicarse con la IA", error)
-        }); */
+      /* .catch(error => {
+        console.error("error al comunicarse con la IA", error)
+      }); */
     }
   }
 
@@ -106,7 +106,7 @@ export const individual = (element) => {
 
   const buttonBackHomeChat = individualChat.querySelector("#buttonBackHomeChatI");
   buttonBackHomeChat.addEventListener("click", () => {
-    window.location.href = "index.html";
+    navigateTo("/");
   });
 
   const buttonchatGrupal = individualChat.querySelector("#buttonchatGrupalI");

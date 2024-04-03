@@ -2,6 +2,7 @@ import { header } from "../components/header.js";
 import { communicateWithOpenAI } from "../lib/openAIApi.js";
 import data from "../data/dataset.js";
 import {footer} from  "../components/footer.js";
+import { navigateTo } from "../router.js";
 
 export const group = () => {
 
@@ -130,7 +131,7 @@ export const group = () => {
 
   const buttonBackHomeChat = containerButtomsChat.querySelector("#buttonBackHomeChat");
   buttonBackHomeChat.addEventListener("click", () => {
-    window.location.href = "index.html";
+    navigateTo("/");
   })
 
   const footerElement = footer();
